@@ -1,17 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@900&display=swap");
 html {
   padding: 0px;
   margin: 0px;
 }
 
+.product-info button {
+  float: right;
+}
+
 button {
   background: #3cb4ac;
   color: white;
-  padding: 25px 25px;
+  padding: 2vh 1.5vw;
   border-radius: 50px;
-  font-style: Commissioner;
+  font-family: Commissioner;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   border: 0px;
 }
 
@@ -23,14 +29,16 @@ body {
 }
 
 nav {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
 }
 
 nav .nav-links {
-  display: inline;
   float: right;
   margin-top: 5%;
+}
+
+nav .nav-items {
   margin-right: 1vw;
 }
 
@@ -38,7 +46,7 @@ nav .nav-links a {
   font-family: Commissioner;
   font-weight: 400;
   color: white;
-  font-size: 16px;
+  font-size: 12pt;
   padding-right: 2.5vw;
   text-decoration: none;
 }
@@ -66,31 +74,86 @@ nav .nav-home img {
 .content {
   width: 720px;
   margin: auto;
-  margin-top: -100px;
+  margin-top: -10vh;
 }
 
 .content-container {
-  margin-top: 25px;
+  margin-top: 1vh;
   background: white;
-  border-radius: 10px;
+  border-radius: 1vw;
   border: 1px solid #ccc;
-  padding: 50px;
+  padding: 5vh 2vw;
   text-align: center;
 }
 
-.backing-info {
+.intro-buttons {
+  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1vh 2vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-info .header {
+  padding: 1vh 0px;
+}
+
+.product-info .description {
+  line-height: 1.5em;
+}
+
+.stats-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5vh;
 }
 
 .stats-item {
   width: 33%;
+  text-align: left;
   -webkit-box-shadow: 20px 0px 2px -20px #ccc;
           box-shadow: 20px 0px 2px -20px #ccc;
+  margin-left: 5%;
+  margin-bottom: 1vh;
+  justify-items: center;
+  line-height: 1em;
+}
+
+.stats .header {
+  font-weight: 700;
+}
+
+.stats-item:last-of-type {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.stats-bar {
+  height: 2vh;
+  border-radius: 5vh;
+  width: 85%;
+  margin: auto;
+  background: #eee;
+  margin-bottom: 2vh;
+  overflow: hidden;
+}
+
+.stats-bar-full {
+  border-radius: 5vh;
+  width: 75%;
+  height: 100%;
+  background: #3cb4ac;
 }
 
 .description {
   color: #7a7a7a;
+}
+
+.product-info {
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
